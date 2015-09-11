@@ -17,6 +17,8 @@ class Chopper
 				suma = list.pop() + list.pop()
 				if suma == 4
 					'cuatro'
+				elsif suma == 18
+					'uno,ocho'
 				end
 			end
 		end
