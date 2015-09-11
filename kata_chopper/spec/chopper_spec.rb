@@ -32,12 +32,12 @@ describe 'Chopper' do
 		expect(chopper.sum([1])).to eq 'uno'
 	end
 
-#limitador de test
-=begin
 	it 'sum de [1,3] deberia ser cuatro' do
 		expect(chopper.sum([1,3])).to eq 'cuatro'
 	end
 
+#limitador de test
+=begin
 	it 'sum de [9,9] deberia ser uno,ocho' do
 		expect(chopper.sum([9,9])).to eq 'uno,ocho'
 	end

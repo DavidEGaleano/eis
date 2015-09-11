@@ -13,6 +13,11 @@ class Chopper
 				if (list.pop() == 1)
 					'uno'
 				end
+			else
+				suma = list.pop() + list.pop()
+				if suma == 4
+					'cuatro'
+				end
 			end
 		end
 	end
