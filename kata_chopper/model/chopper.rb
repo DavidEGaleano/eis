@@ -20,7 +20,9 @@ class Chopper
 				when 18
 					'uno,ocho'
 				when 100
-					'demasiado grande'					
+					'demasiado grande'
+				when 99
+					'nueve,nueve'															
 				end
 			end
 		end
