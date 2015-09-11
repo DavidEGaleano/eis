@@ -1,15 +1,8 @@
 class Chopper
 
-	def initialize
-
-	end
-
 	def chop (valor,list)
-		if list == []
-		-1
-		else
-			list.drop(valor).length
-		end
+		list.delete_at(valor)
+		list.size() -1
 	end
 
 end 
