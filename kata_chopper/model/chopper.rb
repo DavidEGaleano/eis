@@ -14,11 +14,13 @@ class Chopper
 					'uno'
 				end
 			else
-				suma = list.pop() + list.pop()
-				if suma == 4
+				case suma = list.pop() + list.pop()
+				when 4
 					'cuatro'
-				elsif suma == 18
+				when 18
 					'uno,ocho'
+				when 100
+					'demasiado grande'					
 				end
 			end
 		end
