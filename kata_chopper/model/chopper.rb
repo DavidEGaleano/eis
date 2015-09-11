@@ -5,4 +5,10 @@ class Chopper
 		list.size() -1
 	end
 
+	def sum(list)
+		if list == []
+			'vacio'
+		end
+
+	end
 end 
