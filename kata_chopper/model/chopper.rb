@@ -1,8 +1,12 @@
 class Chopper
 
 	def chop (valor,list)
-		list.delete_at(valor)
-		list.size() -1
+		index = list.index(valor)
+		if(index == nil)
+			-1
+		else
+			index
+		end
 	end
 
 	def sum(list)
