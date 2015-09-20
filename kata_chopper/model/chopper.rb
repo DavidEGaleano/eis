@@ -9,25 +9,31 @@ class Chopper
 		end
 	end
 
+	def sumarelemenos (list)
+		sum = 0
+		while !list.empty? do
+			sum = sum + list.pop()
+		end
+		sum
+	end
+
 	def sum(list)
 		if list == []
 			'vacio'
 		else
-			if list.size() == 1
-				if (list.pop() == 1)
-					'uno'
-				end
-			else
-				case suma = list.pop() + list.pop()
-				when 4
-					'cuatro'
-				when 18
-					'uno,ocho'
-				when 100
-					'demasiado grande'
-				when 99
-					'nueve,nueve'															
-				end
+			case sumarelemenos(list)
+			when 0
+				'cero'
+			when 1
+				'uno'
+			when 4
+				'cuatro'
+			when 18
+				'uno,ocho'
+			when 100
+				'demasiado grande'
+			when 99
+				'nueve,nueve'															
 			end
 		end
 	end
