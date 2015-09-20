@@ -28,6 +28,8 @@ class Chopper
 				'uno'
 			when 4
 				'cuatro'
+			when 15
+				'uno,cinco'
 			when 18
 				'uno,ocho'
 			when 100
