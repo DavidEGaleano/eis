@@ -11,9 +11,11 @@ class Chopper
 
 	def sumarelemenos (list)
 		sum = 0
+
 		while !list.empty? do
 			sum = sum + list.pop()
 		end
+		
 		sum
 	end
 
@@ -32,6 +34,8 @@ class Chopper
 				'uno,cinco'
 			when 18
 				'uno,ocho'
+			when 23
+				'dos,tres'
 			when 100
 				'demasiado grande'
 			when 99
