@@ -16,6 +16,8 @@ class Papel
 				"gana"
 			when "piedra"
 				"pierde"
+			when "mono"
+				"gana"
 		end
 	end	
 

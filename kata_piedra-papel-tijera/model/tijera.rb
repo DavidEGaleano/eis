@@ -16,6 +16,8 @@ class Tijera
 				"gana"
 			when "papel"
 				"pierde"
+			when "mono"
+				"gana"
 		end
 	end	
 end
