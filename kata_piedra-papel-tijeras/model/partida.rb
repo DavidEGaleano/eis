@@ -49,10 +49,14 @@ class Partida
 		@rondas.each do |element|
 			if element == "jugador1gana"
 				@contador_j1 += 1
+			elsif element == "jugador2gana"
+				@contador_j2 += 1
 			end
 		end
 
-		if @contador_j1 > @contador_j2 && @nro_de_ronda == 3
+		if @contador_j2 > @contador_j1 && @nro_de_ronda == 3
+			@resultado = "jugador2gana"
+		elsif @contador_j1 > @contador_j2 && @nro_de_ronda == 3
 			@resultado = "jugador1gana"
 		end
 
