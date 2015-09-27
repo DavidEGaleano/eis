@@ -16,6 +16,8 @@ class Mono
 				"empate"
 			when "piedra"
 				"empate"
+			when "tijera"
+				"gana"
 		end
 	end	
 

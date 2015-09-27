@@ -16,8 +16,8 @@ class Piedra
 				"pierde"
 			when "piedra"
 				"empate"
-			when "papel"
-				"gana"
+			when "mono"
+				"empate"
 		end
 	end	
 end
