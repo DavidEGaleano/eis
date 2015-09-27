@@ -41,28 +41,25 @@ class Partida
 	end
 
 	def resultado
-		@contador = 0
+		@contador_j1 = 0
+		@contador_j2 = 0
 		@resultado = "sin definir"
 		@rondas_copia = @rondas
 
 		@rondas.each do |element|
 			if element == "jugador1gana"
-				@contador = @contador + 1
+				@contador_j1 += 1
 			end
 		end
 
-		if (@contador == 2)
+		if @contador_j1 > @contador_j2 && @nro_de_ronda == 3
+			@resultado = "jugador1gana"
+		end
+
+		if @contador_j1 == 2
 			@resultado = "jugador1gana"
 		end
 
 		@resultado
-=begin
-		case @contadores_j1_j2
-			when @contadores_j1_j2[0] == 2    
-				@resultado = "jugador1gana"
-			when ([0,1] && @nro_de_ronda == 3 or [0,2])
-				@resultado = "jugador2gana"
-		end
-=end
 	end
 end
