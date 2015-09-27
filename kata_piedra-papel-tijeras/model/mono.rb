@@ -1,24 +1,19 @@
-class Papel
+class Mono
 
 	def contra(oponente)
 		oponente.resultado(self)
 	end
 
 	def soy
-		"papel"
+		"mono"
 	end
 
 	def resultado(oponente)
 		case oponente.soy
-			when "piedra"
-				"pierde"
 			when "papel"
-				"empate"
-			when "tijera"
-				"gana"
-			when "mono"
-				"gana"
+				"pierde"
 		end
 	end	
+
 
 end

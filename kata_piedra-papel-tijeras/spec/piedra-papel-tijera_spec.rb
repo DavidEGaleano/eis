@@ -3,6 +3,7 @@ require_relative '../model/partida'
 require_relative '../model/papel'
 require_relative '../model/piedra'
 require_relative '../model/tijera'
+require_relative '../model/mono'
 
 describe 'Piedra-papel-tijeras' do
 
@@ -66,6 +67,18 @@ describe 'Piedra-papel-tijeras' do
 		partida.jugador1usa!(Tijera.new)
 		partida.jugador2usa!(Piedra.new)
 		expect(partida.jugar_ronda(0)).to eq "jugador2gana"
+	end
+
+	it 'jugador 1 gana la ronda usando tijera' do
+		partida.jugador1usa!(Tijera.new)
+		partida.jugador2usa!(Papel.new)
+		expect(partida.jugar_ronda(0)).to eq "jugador1gana"
+	end
+
+	it 'jugador 1 gana la ronda usando mono' do
+		partida.jugador1usa!(Mono.new)
+		partida.jugador2usa!(Papel.new)
+		expect(partida.jugar_ronda(0)).to eq "jugador1gana"
 	end
 
 end
