@@ -14,6 +14,8 @@ class Tijera
 				"pierde"
 			when "piedra"
 				"gana"
+			when "tijera"
+				"empate"
 		end
 	end	
 end
