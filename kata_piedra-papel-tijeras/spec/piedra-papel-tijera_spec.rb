@@ -190,5 +190,20 @@ describe 'Piedra-papel-tijeras' do
 		expect(partida.resultado).to eq "jugador1gana"
 	end
 
+	it 'juego en empate con 2 victorias y 1 empate' do 
+		partida.jugador1usa!(Tijera.new)
+		partida.jugador2usa!(Papel.new)
+		partida.jugar_ronda(0)
+		expect(partida.resultado).to eq "sin definir"
+		partida.jugador1usa!(Piedra.new)
+		partida.jugador2usa!(Papel.new)
+		partida.jugar_ronda(1)
+		expect(partida.resultado).to eq "sin definir" 
+		partida.jugador1usa!(Papel.new)
+		partida.jugador2usa!(Papel.new)
+		partida.jugar_ronda(2)
+		expect(partida.resultado).to eq "empate"
+	end
+
 
 end
