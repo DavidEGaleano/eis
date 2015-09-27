@@ -14,6 +14,8 @@ class Papel
 				"pierde"
 			when "papel"
 				"empate"
+			when "tijera"
+				"gana"
 		end
 	end	
 
