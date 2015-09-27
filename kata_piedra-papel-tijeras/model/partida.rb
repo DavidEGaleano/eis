@@ -4,6 +4,7 @@ class Partida
 	@eleccion_jugador_2
 	@resultado
 	@rondas
+	@nro_de_ronda
 
 	def initialize(rondas)
 		@rondas = Array.new(rondas)
@@ -35,8 +36,33 @@ class Partida
 			when "empate"
 				@rondas[numero_ronda] = "empate"
 		end
-
+		@nro_de_ronda = numero_ronda + 1
 		self.resultado_ronda(numero_ronda)
 	end
 
+	def resultado
+		@contador = 0
+		@resultado = "sin definir"
+		@rondas_copia = @rondas
+
+		@rondas.each do |element|
+			if element == "jugador1gana"
+				@contador = @contador + 1
+			end
+		end
+
+		if (@contador == 2)
+			@resultado = "jugador1gana"
+		end
+
+		@resultado
+=begin
+		case @contadores_j1_j2
+			when @contadores_j1_j2[0] == 2    
+				@resultado = "jugador1gana"
+			when ([0,1] && @nro_de_ronda == 3 or [0,2])
+				@resultado = "jugador2gana"
+		end
+=end
+	end
 end
