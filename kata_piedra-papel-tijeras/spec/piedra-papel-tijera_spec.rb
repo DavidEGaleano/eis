@@ -25,4 +25,11 @@ describe 'Piedra-papel-tijeras' do
 		partida.jugador2usa!(Papel.new)
 		expect(partida.jugar_ronda(0)).to eq "empate"
 	end
+
+		it 'jugador 1 gana la ronda usando piedra' do
+		partida.jugador1usa!(Piedra.new)
+		partida.jugador2usa!(Tijera.new)
+		expect(partida.jugar_ronda(0)).to eq "jugador1gana"
+	end
+
 end

@@ -12,6 +12,8 @@ class Tijera
 		case oponente.soy
 			when "papel"
 				"pierde"
+			when "piedra"
+				"gana"
 		end
 	end	
 end
