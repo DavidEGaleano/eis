@@ -12,6 +12,8 @@ class Papel
 		case oponente.soy
 			when "piedra"
 				"pierde"
+			when "papel"
+				"empate"
 		end
 	end	
 

@@ -32,6 +32,8 @@ class Partida
 				@rondas[numero_ronda] = "jugador1gana"
 			when "pierde"
 				@rondas[numero_ronda] = "jugador2gana"
+			when "empate"
+				@rondas[numero_ronda] = "empate"
 		end
 
 		self.resultado_ronda(numero_ronda)
