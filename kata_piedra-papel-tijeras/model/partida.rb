@@ -65,6 +65,10 @@ class Partida
 		elsif @contador_j2 == 2
 			@resultado = "jugador2gana"
 		end
+
+		if @contador_j1 == 0 && @contador_j2 == 0 && @nro_de_ronda == 3
+			@resultado = "empate"
+		end
 			
 
 		@resultado
