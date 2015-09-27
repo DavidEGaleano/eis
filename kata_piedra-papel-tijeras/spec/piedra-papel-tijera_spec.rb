@@ -148,4 +148,15 @@ describe 'Piedra-papel-tijeras' do
 		partida.jugar_ronda(2)
 		expect(partida.resultado).to eq "jugador2gana"
 	end	
+
+	it 'jugador 1 pierde la partida a dos rondas' do 
+		partida.jugador1usa!(Papel.new)
+		partida.jugador2usa!(Tijera.new)
+		partida.jugar_ronda(0)
+		expect(partida.resultado).to eq "sin definir"
+		partida.jugador1usa!(Piedra.new)
+		partida.jugador2usa!(Papel.new)
+		partida.jugar_ronda(1)
+		expect(partida.resultado).to eq "jugador2gana"
+	end	
 end

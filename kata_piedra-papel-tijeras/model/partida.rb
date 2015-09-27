@@ -62,7 +62,10 @@ class Partida
 
 		if @contador_j1 == 2
 			@resultado = "jugador1gana"
+		elsif @contador_j2 == 2
+			@resultado = "jugador2gana"
 		end
+			
 
 		@resultado
 	end
