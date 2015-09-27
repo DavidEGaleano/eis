@@ -16,6 +16,8 @@ class Tijera
 				"gana"
 			when "tijera"
 				"empate"
+			when "mono"
+				"pierde"
 		end
 	end	
 end
