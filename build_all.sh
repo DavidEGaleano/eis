@@ -7,7 +7,3 @@ cd ..
 cd kata_chopper
 bundle install
 bundle exec rake
-cd ..
-cd kata_piedra-papel-tijera
-bundle install
-bundle exec rake
