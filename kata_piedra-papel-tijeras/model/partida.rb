@@ -31,7 +31,7 @@ class Partida
     case @resultado
       when "gana"
         @rondas[numero_ronda] = "jugador1gana"
-	  when "pierde"
+      when "pierde"
         @rondas[numero_ronda] = "jugador2gana"
       when "empate"
         @rondas[numero_ronda] = "empate"

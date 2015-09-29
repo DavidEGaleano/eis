@@ -10,14 +10,14 @@ class Piedra
 
   def resultado(oponente)
     case oponente.soy
-      when "papel"
-	    "gana"
-	  when "tijera"
-	    "pierde"
-	  when "piedra"
-	    "empate"
-	  when "mono"
-	    "empate"
+      when "papel" 
+         "gana"
+      when "tijera"
+        "pierde"
+      when "piedra"
+        "empate"
+      when "mono"
+        "empate"
     end
   end	
 end

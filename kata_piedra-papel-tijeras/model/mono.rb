@@ -12,12 +12,12 @@ class Mono
     case oponente.soy
       when "papel"
         "pierde"
-	  when "mono"
-	    "empate"
-	  when "piedra"
-	    "empate"
-	  when "tijera"
-	    "gana"
-	  end
-	end	
+      when "mono"
+        "empate"
+      when "piedra"
+        "empate"
+      when "tijera"
+        "gana"
+    end
+  end	
 end
