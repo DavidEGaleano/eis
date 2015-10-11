@@ -12,6 +12,6 @@ cd kata_piedra-papel-tijeras
 bundle install
 bundle exec rake
 cd ..
-cd base_cucumber
+cd kata_batallanaval
 bundle install
 bundle exec rake
