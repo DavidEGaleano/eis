@@ -1,7 +1,7 @@
 require 'rspec'
 require_relative '../model/barco'
 
-describe 'Tablero' do
+describe 'Barco' do
 
   let(:barco) { Barco.new("1",3) }  
 
@@ -9,4 +9,8 @@ describe 'Tablero' do
     expect(barco.tamaño).to eq 3
   end
 
+  it 'cuando es golpeado el barco debe retornar 2' do
+    barco.fue_golpeado!
+    expect(barco.tamaño).to eq 2
+  end
 end

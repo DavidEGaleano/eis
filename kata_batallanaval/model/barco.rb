@@ -9,5 +9,9 @@ class Barco
   def dar_tamaño
     @tamaño
   end
-  
+
+  def fue_golpeado!
+    @tamaño = @tamaño - 1
+  end
+
 end
