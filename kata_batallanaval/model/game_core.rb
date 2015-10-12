@@ -10,6 +10,7 @@ class GameCore
 
   def nuevo_juego
   	@tablero = Tablero.new
+  	@player_1 = Player.new("1")
   end
 
   def player_1_selecciona_barco(un_barco)
