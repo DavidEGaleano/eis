@@ -2,6 +2,8 @@ class GameCore
   @tablero
   @barco_seleccionado
   @player_1
+  @player_2
+  @player_seleccionado
   
   def initialize
     @tablero = Tablero.new
@@ -31,8 +33,12 @@ class GameCore
     @tablero.colocar_barco(x,y,@barco_seleccionado)
   end
 
-  def player_1_dispara_a_la_coordenada(x,y)
-    @tablero.disparan_a_la_coordenada("1",x,y)
+  def seleccionar_player(nombre_player)
+    @player_seleccionado = nombre_player
+  end
+
+  def player_dispara_a_la_coordenada(x,y)
+    @tablero.disparan_a_la_coordenada(@player_seleccionado,x,y)
   end
 
 end
