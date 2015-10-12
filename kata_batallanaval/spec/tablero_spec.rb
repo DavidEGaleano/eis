@@ -15,10 +15,14 @@ describe 'Tablero' do
     expect(tablero.dar_celda(1,1)) == (Barco)
   end
 
-  it 'dado un barco y una coordenada 1,1 que tiene un barco, deberia de devolver que "celda ocupada"' do
+  it 'dado un barco y una coordenada 1,1 que tiene un barco, deberia de devolver que "coordenada invalida"' do
   	tablero = Tablero.new
   	tablero.colocar_barco(1,1,Barco.new)
-  	expect(tablero.colocar_barco(1,1,Barco.new)).to eq "celda ocupada"
+  	expect(tablero.colocar_barco(1,1,Barco.new)).to eq "coordenada invalida"
+  end
+	
+  it 'dada una coordenada 10,10 que esta fuera de los limites, deberia devolver "coordenada invalida"' do
+    expect(tablero.colocar_barco(10,10,Barco.new)).to eq "coordenada invalida"
   end
 
 end

@@ -17,16 +17,20 @@ class Tablero
 
   def colocar_barco(x,y,objeto)
     
-    if !celda_ocupada?(x,y)
+    if !celda_valida?(x,y) 
       @area[x-1][y-1]= objeto
     else
-      "celda ocupada"
+      "coordenada invalida"
     end
-    
+
   end
 
-  def celda_ocupada?(x,y)
-    @area[x-1][y-1] != "celda"
+  def celda_valida?(x,y)
+    fuera_de_margen?(x,y) || @area[x-1][y-1] != "celda"
+  end
+
+  def fuera_de_margen?(x,y)
+    ( x > @area.length && y > @area.length) 
   end
 
 end
