@@ -31,4 +31,8 @@ class GameCore
     @tablero.colocar_barco(x,y,@barco_seleccionado)
   end
 
+  def player_1_dispara_a_la_coordenada(x,y)
+    @tablero.disparan_a_la_coordenada("1",x,y)
+  end
+
 end

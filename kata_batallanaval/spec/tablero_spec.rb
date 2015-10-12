@@ -25,4 +25,8 @@ describe 'Tablero' do
     expect(tablero.colocar_barco(10,10,Barco.new("1",3))).to eq "coordenada invalida"
   end
 
+  it 'dada una coordenada de ataque en el que no hay barco, deberia devolver "agua!"' do
+    expect(tablero.disparan_a_la_coordenada("1",5,5)).to eq "agua!"
+  end
+
 end

@@ -24,4 +24,8 @@ class BatallaNaval
   def player_2_coloca_un_barco_en(x , y)
     @game_core.player_2_coloca_barco(x,y)
   end
+
+  def player_1_dispara_a_la_coordenada(x , y)
+    @game_core.player_1_dispara_a_la_coordenada(x,y)
+  end
 end
