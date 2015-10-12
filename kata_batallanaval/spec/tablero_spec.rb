@@ -15,4 +15,10 @@ describe 'Tablero' do
     expect(tablero.dar_celda(1,1)) == (Barco)
   end
 
+  it 'dado un barco y una coordenada 1,1 que tiene un barco, deberia de devolver que "celda ocupada"' do
+  	tablero = Tablero.new
+  	tablero.colocar_barco(1,1,Barco.new)
+  	expect(tablero.colocar_barco(1,1,Barco.new)).to eq "celda ocupada"
+  end
+
 end
