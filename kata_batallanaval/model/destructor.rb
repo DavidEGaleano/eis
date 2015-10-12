@@ -1,0 +1,3 @@
+class Destructor < Barco
+	
+end

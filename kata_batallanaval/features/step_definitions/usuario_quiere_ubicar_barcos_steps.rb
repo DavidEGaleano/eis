@@ -4,6 +4,9 @@ require_relative '../../model/tablero'
 require_relative '../../model/player'
 require_relative '../../model/caja_de_barcos'
 require_relative '../../model/barco'
+require_relative '../../model/destructor'
+require_relative '../../model/crucero'
+require_relative '../../model/submarino'
 
 
 Given(/^un tablero vacio$/) do

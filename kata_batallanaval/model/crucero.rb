@@ -1,0 +1,3 @@
+class Crucero < Barco
+
+end

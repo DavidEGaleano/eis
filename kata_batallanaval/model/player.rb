@@ -2,7 +2,7 @@ class Player
   attr_reader :nombre, :caja_de_barcos
 
   def initialize(nombre_player)
-    @caja_de_barcos = CajaDeBarcos.new
+    @caja_de_barcos = CajaDeBarcos.new(nombre)
     @nombre = nombre_player
   end
 

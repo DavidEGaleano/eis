@@ -1,0 +1,3 @@
+class Submarino < Barco
+
+end

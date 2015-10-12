@@ -4,9 +4,11 @@ class Tablero
   def initialize
 
     @area = [
-      ["celda","celda","celda"],
-      ["celda","celda","celda"],
-      ["celda","celda","celda"]
+      ["celda","celda","celda","celda","celda","celda"],
+      ["celda","celda","celda","celda","celda","celda"],
+      ["celda","celda","celda","celda","celda","celda"],
+      ["celda","celda","celda","celda","celda","celda"],
+      ["celda","celda","celda","celda","celda","celda"],
     ]
 
   end
