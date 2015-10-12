@@ -1,19 +1,19 @@
 class Barco
-  attr_reader :nombre_player,:tamaño,:destruido
+  attr_reader :nombre_player,:resistencia,:destruido
 
   def initialize(nombre_de_player,tamaño_barco)
      @nombre_player = nombre_de_player
-     @tamaño = tamaño_barco
+     @resistencia = tamaño_barco
      @destruido = false
   end
 
-  def dar_tamaño
-    @tamaño
+  def dar_resistencia
+    @resistencia
   end
 
   def fue_golpeado!
-    @tamaño = @tamaño - 1
-    @destruido = @tamaño == 0
+    @resistencia = @resistencia - 1
+    @destruido = @resistencia == 0
   end
 
   def destruido?

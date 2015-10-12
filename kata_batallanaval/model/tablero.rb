@@ -34,9 +34,10 @@ class Tablero
   def fuera_de_margen?(x,y)
     ( x > @area.length && y > @area.length) 
   end
+
   #asume que es coorecta la posicion dada 
   def disparan_a_la_coordenada(nombre_player,x,y)
-    if(dar_celda(x,y) != Barco)
+    if(dar_celda(x,y) == "celda")
       "agua!"
     else
       #barco.fue_golpeado!
