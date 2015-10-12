@@ -10,19 +10,20 @@ describe 'Barco' do
   end
 
   it 'cuando es golpeado el barco debe retornar 2 al pedir su resistencia' do
-    barco.fue_golpeado!
+    barco.fue_golpeado!("1")
     expect(barco.dar_resistencia).to eq 2
   end
 
   it 'cuando es golpeado la misma cantidad de veces que su resistencia, debe retornar que esa destruido' do
-    barco.fue_golpeado!
-    barco.fue_golpeado!
-    barco.fue_golpeado!
+    barco.fue_golpeado!("1")
+    barco.fue_golpeado!("1")
+    barco.fue_golpeado!("1")
     expect(barco.destruido?).to be true
   end
 
   it 'cuando es golpeado pero no supera su resistencia, debe retornar que no esta destruido' do
-    barco.fue_golpeado!
+    barco.fue_golpeado!("1")
     expect(barco.destruido?).to be false
   end
+
 end

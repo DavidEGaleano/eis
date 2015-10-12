@@ -11,7 +11,7 @@ class Barco
     @resistencia
   end
 
-  def fue_golpeado!
+  def fue_golpeado!(nombre_player)
     @resistencia = @resistencia - 1
     @destruido = @resistencia == 0
   end
