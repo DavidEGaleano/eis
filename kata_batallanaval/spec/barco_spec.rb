@@ -13,4 +13,11 @@ describe 'Barco' do
     barco.fue_golpeado!
     expect(barco.tamaño).to eq 2
   end
+
+  it 'cuando es golpeado la misma cantidad de veces que su tamaño, debe retornar que esa destruido' do
+    barco.fue_golpeado!
+    barco.fue_golpeado!
+    barco.fue_golpeado!
+    expect(barco.destruido?).to be true
+  end
 end
