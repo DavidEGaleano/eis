@@ -52,7 +52,6 @@ class Tablero
     ( x > @area.length && y > @area.length) 
   end
 
-  #asume que es correcta la posicion dada 
   def disparan_a_la_coordenada(nombre_player,x,y)
     if(!fue_usada_esa_coordenada?(nombre_player,x,y))
       ejecuto_disparo_en(nombre_player,x,y)

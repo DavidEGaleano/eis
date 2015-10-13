@@ -1,10 +1,5 @@
 class GameCore
-  @tablero
-  @barco_seleccionado
-  @player_1
-  @player_2
-  @player_seleccionado
-  
+  attr_reader :tablero,:barco_seleccionado,:player_1,:player_2,:player_seleccionado
   def initialize
     @tablero = Tablero.new
     @player_1 = Player.new("1")
