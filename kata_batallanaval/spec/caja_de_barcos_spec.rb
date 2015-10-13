@@ -18,4 +18,8 @@ describe 'CajaDeBarcos' do
     expect(caja_de_barcos.obtener_barco("crucero")) == (Crucero)
   end
 
+  it 'dado un nombre de barco "submarino", deberia da un barco tipo Submarino' do
+    expect(caja_de_barcos.obtener_barco("Submarino")) == (Submarino)
+  end
+
 end
