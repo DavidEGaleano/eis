@@ -21,5 +21,8 @@ describe 'Player' do
     player.seleccionar_un_barco("destructor").should be_kind_of (Destructor)
   end
 
+  it 'al solicitarle el nombre al player debe devolver su nombre ' do
+    expect(player.dar_nombre).to eq "1"
+  end
   
 end
