@@ -1,7 +1,6 @@
 require 'rspec'
 require_relative '../model/barco'
 require_relative '../model/submarino'
-require_relative '../model/submarino'
 
 describe 'Submarino' do
 

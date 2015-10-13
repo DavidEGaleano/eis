@@ -37,4 +37,10 @@ Then(/^dispara a la coordenada (\d+),(\d+) golpea un barco enemigo pero no lo hu
   expect(@batalla_naval.player_dispara_a_la_coordenada(arg1.to_i,arg2.to_i)).to eq "Crucero del jugador 2 ha sido impactado!"
 end
 
+Then(/^ataca la coordenada (\d+),(\d+) golpea un barco y lo hunde$/) do |arg1, arg2|
+  expect(@batalla_naval.player_dispara_a_la_coordenada(arg1.to_i,arg2.to_i)).to eq "Submarino del jugador 2 ha sido destruido!"
+end
+
+
+
 
