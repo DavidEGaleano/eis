@@ -14,7 +14,7 @@ describe 'Barco' do
     expect(barco.dar_resistencia).to eq 2
   end
 
-  it 'cuando es golpeado la misma cantidad de veces que su resistencia, debe retornar que esa destruido' do
+  it 'cuando es golpeado la misma cantidad de veces que su resistencia, debe retornar que esta destruido' do
     barco.fue_golpeado!("1")
     barco.fue_golpeado!("1")
     barco.fue_golpeado!("1")

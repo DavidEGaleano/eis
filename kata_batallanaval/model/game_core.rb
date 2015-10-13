@@ -26,7 +26,7 @@ class GameCore
   end
 
   def player_2_selecciona_barco(un_barco)
-    @barco_seleccionado = @player_1.seleccionar_un_barco(un_barco)
+    @barco_seleccionado = @player_2.seleccionar_un_barco(un_barco)
   end
 
   def player_2_coloca_barco(x, y)
