@@ -77,7 +77,7 @@ class Tablero
 
   def grabar_coordenada_usada(nombre_player,x,y)
     @numero_player= nombre_player.to_i - 1
-    @tamaño_lista =  @coordenadas_de_disparo_elegidas[@numero_player].length
+    @tamaño_lista = @coordenadas_de_disparo_elegidas[@numero_player].length
     @coordenadas_de_disparo_elegidas[@numero_player][@tamaño_lista] = [x,y]
   end
 

@@ -65,5 +65,11 @@ describe 'Tablero' do
     expect(tablero.disparan_a_la_coordenada("1",1,1)).to eq "Destructor del jugador 2 ha sido impactado!"
     expect(tablero.disparan_a_la_coordenada("1",1,1)).to eq "Player 1 ya disparo en esa coordenada"
   end
+
+  it 'dada una serie de coordenadas de ataque por el player 2 que cooresponden a coordenadas ya usadas, deberia de devolver "Player 2 ya disparo en esa coordenada" ' do
+    tablero.colocar_barco(1,1,Destructor.new(Player.new("1"),3))
+    expect(tablero.disparan_a_la_coordenada("2",1,1)).to eq "Destructor del jugador 1 ha sido impactado!"
+    expect(tablero.disparan_a_la_coordenada("2",1,1)).to eq "Player 2 ya disparo en esa coordenada"
+  end
 end
 
