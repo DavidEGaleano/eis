@@ -10,7 +10,7 @@ class CajaDeBarcos
   def construir_barcos
     @caja.store("destructor", Destructor.new(@nombre_player,3))
     @caja.store("crucero", Crucero.new(@nombre_player,2))
-    @caja.store("submarino", Barco.new(@nombre_player,1))
+    @caja.store("submarino", Submarino.new(@nombre_player,1))
   end
 
   def obtener_barco(nombre_barco)

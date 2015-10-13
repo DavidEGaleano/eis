@@ -14,8 +14,12 @@ describe 'Player' do
   end
 
   it 'cuando selecciona un barco con el nombre "submarino" debe devolver un barco tipo "Submarino"' do
-    player.seleccionar_un_barco("submarion").should be_kind_of (Submarino)
+    player.seleccionar_un_barco("submarino").should be_kind_of(Submarino)
   end
-  
+
+  it 'cuando selecciona un barco con el nombre "destructor" debe devolver un barco tipo "Destructor"' do
+    player.seleccionar_un_barco("destructor").should be_kind_of (Destructor)
+  end
+
   
 end
