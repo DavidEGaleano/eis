@@ -13,15 +13,27 @@ describe 'Tablero' do
     expect(tablero.dar_celda(1,1)).to eq "celda"
   end
 
-  it 'dado un barco y una coordenada 1,1 deberia poner el barco en la celda' do
-    tablero.colocar_barco(1,1,Barco.new("1",3))
+  it 'dado un barco tamaño 1 y una coordenada 1,1 deberia poner el barco en la celda y ocupar 1 celda' do
+    tablero.colocar_barco(1,1,Barco.new("1",1))
     expect(tablero.dar_celda(1,1)) == (Barco)
+    expect(tablero.dar_celda(1,2)) == "celda"
   end
   
   it 'colcando un barco tipo crucero, y la coordenada 1,1 deberia poner el barco que ocupe 2 celdas' do
-    tablero.colocar_barco(1,1,Crucero.new("1",3))
+    tablero.colocar_barco(1,1,Crucero.new("1",2))
     expect(tablero.dar_celda(1,1)) == (Crucero)
+    expect(tablero.dar_celda(1,2)) == (Crucero)
+    expect(tablero.dar_celda(1,3)) == "celda"
   end
+
+  it 'colcando un barco tipo destructor, y la coordenada 1,1 deberia poner el barco que ocupe 3 celdas' do
+    tablero.colocar_barco(1,1,Crucero.new("1",3))
+    expect(tablero.dar_celda(1,1)) == (Destructor)
+    expect(tablero.dar_celda(1,2)) == (Destructor)
+    expect(tablero.dar_celda(1,3)) == (Destructor)
+    expect(tablero.dar_celda(1,4)) == "celda"
+  end
+
 
   it 'dado un barco y una coordenada 1,1 que tiene un barco, deberia de devolver que "coordenada invalida"' do
   	tablero = Tablero.new
