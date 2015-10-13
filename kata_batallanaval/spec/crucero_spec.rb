@@ -10,7 +10,7 @@ describe 'Crucero' do
     expect(crucero.fue_golpeado!("2")).to eq "Crucero del jugador 1 ha sido impactado!"
   end
 
-  it 'cuando es impactado por varios ataques del jugador 2, debe devolver "Crucero del jugador 1 ha sido destruido!' do
+  it 'cuando es impactado por 2 ataques del jugador 2, debe devolver "Crucero del jugador 1 ha sido destruido!' do
     expect(crucero.fue_golpeado!("2")).to eq "Crucero del jugador 1 ha sido impactado!"
     expect(crucero.fue_golpeado!("2")).to eq "Crucero del jugador 1 ha sido destruido!"
   end
