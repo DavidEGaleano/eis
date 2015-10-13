@@ -42,8 +42,14 @@ describe 'Tablero' do
     expect(tablero.disparan_a_la_coordenada("1",1,1)).to eq "Crucero del jugador 2 ha sido impactado!"
   end
 
-  it 'dada una coordenada de ataque por el player 1 en el que hay un submarino del player 2, deberia devolver ha "Submarino del jugandor 2 ha sido destruido!"' do
+  it 'dada una coordenada de ataque por el player 1 en el que hay un submarino del player 2, deberia devolver "Submarino del jugandor 2 ha sido destruido!"' do
     tablero.colocar_barco(1,1,Submarino.new(Player.new("2"),1))
     expect(tablero.disparan_a_la_coordenada("1",1,1)).to eq "Submarino del jugador 2 ha sido destruido!"  
+  end
+
+  it 'dada una serie de coordenadas de ataque por el player 1 en el que hay un crucero del player 2, deberia devolver "Crucero del jugandor 2 ha sido destruido!" ' do
+    tablero.colocar_barco(1,1,Crucero.new(Player.new("2"),2))
+    expect(tablero.disparan_a_la_coordenada("1",1,1)).to eq "Crucero del jugador 2 ha sido impactado!"
+    expect(tablero.disparan_a_la_coordenada("1",1,2)).to eq "Crucero del jugador 2 ha sido destruido!"
   end
 end

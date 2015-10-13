@@ -20,7 +20,7 @@ class Tablero
   def colocar_barco(x,y,objeto)
     
     if celda_valida?(x,y,objeto.dar_resistencia) 
-      for i in 0..objeto.dar_resistencia-1
+      for i in 0..objeto.dar_resistencia
         @area[x-1][y-1 + i] = objeto
       end
     else
