@@ -9,7 +9,7 @@ require_relative '../model/pierde'
 require_relative '../model/mono'
 
 
-describe 'Piedra' do
+describe 'Tijera' do
 
   let(:piedra) { Piedra.new }
   let(:tijera) { Tijera.new }
