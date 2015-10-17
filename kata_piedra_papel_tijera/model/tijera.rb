@@ -8,5 +8,7 @@ class Tijera
     Gana.new
   end
 
-  
+  def juega_contra_tijera(una_tijera)
+  	Empate.new
+  end
 end
