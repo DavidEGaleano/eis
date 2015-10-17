@@ -25,5 +25,9 @@ describe 'Mono' do
     expect(mono.juega_contra(tijera)).to be_kind_of(Pierde)
   end
 
+  it 'mono contra piedra deberia empatar' do
+    expect(mono.juega_contra(piedra)).to be_kind_of(Empate)
+  end
+
 
 end
