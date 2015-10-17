@@ -12,5 +12,9 @@ class Papel
   	Gana.new
   end
 
+  def juega_contra_papel(un_papel)
+  	Empate.new
+  end
+
 
 end

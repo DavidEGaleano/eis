@@ -17,8 +17,11 @@ describe 'Papel' do
   let(:mono) { Mono.new }
 
 
-  it 'papel contra piedra deberia gana' do
+  it 'papel contra piedra deberia ganar' do
     expect(papel.juega_contra(piedra)).to be_kind_of(Gana)
   end
 
+  it 'papel contra papel deberia empatar' do
+    expect(papel.juega_contra(papel)).to be_kind_of(Empate)
+  end
 end
