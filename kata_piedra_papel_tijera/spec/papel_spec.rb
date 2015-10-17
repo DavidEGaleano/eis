@@ -28,4 +28,8 @@ describe 'Papel' do
   it 'papel contra tijera deberia perder' do
     expect(papel.juega_contra(tijera)).to be_kind_of(Pierde)
   end
+
+  it 'papel contra mono deberia perder' do
+    expect(papel.juega_contra(mono)).to be_kind_of(Pierde)
+  end
 end

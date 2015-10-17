@@ -7,4 +7,8 @@ class Mono
   def juega_contra_tijera(una_tijera)
   	Gana.new
   end
+
+  def juega_contra_papel(un_papel)
+  	Pierde.new
+  end
 end
