@@ -16,5 +16,9 @@ class Papel
   	Empate.new
   end
 
+  def juega_contra_mono(un_mono)
+  	Gana.new
+  end
+
 
 end
