@@ -17,16 +17,12 @@ class Decoder
   end
 
   def get_result_in_words(list)
-  	if(list.length == 1)
-      @number_to_word_table[list.pop]
+    if(list.length <= 2)
+      @value = ''
+      list.each{|x| @value << @number_to_word_table[x] + ','}
+      @value.chop
     else
-      if(list.length == 2)
-        @value = ''
-        list.each{|x| @value << @number_to_word_table[x] + ','}
-        @value.chop
-      else
-        'demasiado grande'
-      end
+      'demasiado grande'
     end
   end
 
