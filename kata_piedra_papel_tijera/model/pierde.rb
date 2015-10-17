@@ -1,0 +1,3 @@
+class Pierde < Definicion
+
+end

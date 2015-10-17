@@ -12,4 +12,8 @@ class Piedra
     Gana.new
   end
 
+  def juega_contra_papel(un_papel)
+    Gana.new
+  end
+
 end
