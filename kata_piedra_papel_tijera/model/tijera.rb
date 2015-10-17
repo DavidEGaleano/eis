@@ -1,5 +1,12 @@
 class Tijera
+
+  def juega_contra(otro_movimiento)
+    otro_movimiento.juega_contra_tijera(self)
+  end
+
   def juega_contra_piedra(una_piedra)
     Gana.new
   end
+
+  
 end

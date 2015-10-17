@@ -9,7 +9,7 @@ class Piedra
   end
 
   def juega_contra_tijera(una_tijera)
-    Gana.new
+    Pierde.new
   end
 
   def juega_contra_papel(un_papel)

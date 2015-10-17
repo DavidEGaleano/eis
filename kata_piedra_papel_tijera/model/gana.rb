@@ -1,3 +1,3 @@
-class Gana
+class Gana < Definicion
 
 end
