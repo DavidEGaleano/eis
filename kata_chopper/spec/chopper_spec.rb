@@ -35,7 +35,6 @@ describe 'Chopper' do
 		expect(chopper.sum([1,3])).to eq 'cuatro'
 	end
 
-=begin	
 	it 'sum de [9,9] deberia ser uno,ocho' do
 		expect(chopper.sum([9,9])).to eq 'uno,ocho'
 	end
@@ -44,6 +43,7 @@ describe 'Chopper' do
 		expect(chopper.sum([50,50])).to eq 'demasiado grande'
 	end
 
+=begin	
 	it 'sum de [50,49] deberia ser nueve,nueve' do
 		expect(chopper.sum([50,49])).to eq 'nueve,nueve'
 	end
