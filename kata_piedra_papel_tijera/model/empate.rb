@@ -1,0 +1,3 @@
+class Empate
+
+end
