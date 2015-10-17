@@ -29,4 +29,8 @@ describe 'Piedra' do
     expect(tijera.juega_contra(papel)).to be_kind_of(Gana)
   end
 
+  it 'tijera contra mono deberia ganar' do
+    expect(tijera.juega_contra(mono)).to be_kind_of(Gana)
+  end
+
 end
