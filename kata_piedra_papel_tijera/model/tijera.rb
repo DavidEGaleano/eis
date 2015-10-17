@@ -15,4 +15,8 @@ class Tijera
   def juega_contra_papel(un_papel)
     Pierde.new
   end
+
+  def juega_contra_mono(un_mono)
+  	Pierde.new
+  end
 end
