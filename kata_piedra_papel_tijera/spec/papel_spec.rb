@@ -24,4 +24,8 @@ describe 'Papel' do
   it 'papel contra papel deberia empatar' do
     expect(papel.juega_contra(papel)).to be_kind_of(Empate)
   end
+
+  it 'papel contra tijera deberia perder' do
+    expect(papel.juega_contra(tijera)).to be_kind_of(Pierde)
+  end
 end
