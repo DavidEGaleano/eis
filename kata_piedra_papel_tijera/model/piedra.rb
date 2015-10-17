@@ -16,4 +16,8 @@ class Piedra
     Gana.new
   end
 
+  def juega_contra_mono(un_mono)
+  	Empate.new
+  end
+
 end

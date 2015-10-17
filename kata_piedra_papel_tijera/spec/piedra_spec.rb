@@ -6,12 +6,15 @@ require_relative '../model/tijera'
 require_relative '../model/definicion'
 require_relative '../model/papel'
 require_relative '../model/pierde'
+require_relative '../model/mono'
+
 
 describe 'Piedra' do
 
   let(:piedra) { Piedra.new }
   let(:tijera) { Tijera.new }
   let(:papel) { Papel.new }
+  let(:mono) { Mono.new }
 
 
   it 'piedra contra piedra deberia empatar' do
@@ -26,4 +29,7 @@ describe 'Piedra' do
     expect(piedra.juega_contra(papel)).to be_kind_of(Pierde)
   end
 
+  it "piedra contra mono deberia empatar" do
+    expect(piedra.juega_contra(mono)).to be_kind_of(Empate)
+  end
 end
