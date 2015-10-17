@@ -15,7 +15,7 @@ describe 'Chopper' do
 	it 'chop de 3 y vacio deberia ser -1' do
 		expect(chopper.chop(3,[])).to eq -1
 	end
-	
+
 	it 'chop de 3 y [3] deberia ser 0' do
 		expect(chopper.chop(3,[3])).to eq 0 
 	end
@@ -56,9 +56,8 @@ describe 'Chopper' do
 		expect(chopper.sum([15])).to eq 'uno,cinco'
 	end
 
-=begin
 	it 'sum de [20,1,1,1] deberia ser dos,tres' do
 		expect(chopper.sum([20,1,1,1])).to eq 'dos,tres'
 	end
-=end
+
 end
