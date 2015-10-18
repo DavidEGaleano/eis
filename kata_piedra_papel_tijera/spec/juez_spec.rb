@@ -58,4 +58,13 @@ describe 'Juez' do
     expect(juez.evaluar!(ronda_2)).to eq "jugador 1 gana"
   end
 
+  it 'jugadas 2 rondas que gana el jugador 2, debe dar "jugador 2 gana"' do
+    ronda_1.jugador_1_usa(piedra)
+    ronda_1.jugador_2_usa(papel)
+    expect(juez.evaluar!(ronda_1)).to eq "jugador 2 gana"
+    ronda_2.jugador_1_usa(piedra)
+    ronda_2.jugador_2_usa(papel)
+    expect(juez.evaluar!(ronda_2)).to eq "jugador 2 gana"
+  end
+
 end
