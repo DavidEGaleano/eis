@@ -19,6 +19,15 @@ class Partida
   	@turno = 2
   end
 
+  def usa_tijera!
+    self.aplicar_seleccion(Tijera.new)
+  end
+
+  def usa_papel!
+    self.aplicar_seleccion(Papel.new)
+  end
+
+
   def usa_piedra!
     self.aplicar_seleccion(Piedra.new)
   end
