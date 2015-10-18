@@ -27,6 +27,9 @@ class Partida
     self.aplicar_seleccion(Papel.new)
   end
 
+  def usa_mono!
+  	self.aplicar_seleccion(Mono.new)
+  end
 
   def usa_piedra!
     self.aplicar_seleccion(Piedra.new)

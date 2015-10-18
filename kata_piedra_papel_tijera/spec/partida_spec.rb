@@ -31,4 +31,12 @@ describe 'Partida' do
     expect(partida.jugar!).to eq "jugador 2 gana"
   end
 
+  it 'usando mono vs papel, debe dar jugador 1 gana' do
+    partida.turno_player_1!
+    partida.usa_mono!
+    partida.turno_player_2!
+    partida.usa_papel!
+    expect(partida.jugar!).to eq "jugador 1 gana"
+  end
+
 end
