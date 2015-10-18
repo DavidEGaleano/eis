@@ -12,7 +12,7 @@ require_relative '../model/juez'
 
 describe 'Juez' do
   
-  let(:juez) { Juez.new }
+  
   let(:piedra) { Piedra.new }
   let(:tijera) { Tijera.new }
   let(:papel) { Papel.new }
@@ -20,20 +20,30 @@ describe 'Juez' do
   let(:ronda_1) { Ronda.new }
   let(:ronda_2) { Ronda.new }
   let(:ronda_3) { Ronda.new }
+  let(:juez) { Juez.new }
 
-
-  it 'jugada una sola ronda, debe dar "Juego sin definir" ' do
+  it 'jugada una sola ronda, debe dar empate' do
     ronda_1.jugador_1_usa(piedra)
     ronda_1.jugador_2_usa(piedra)
-    expect(juez.evaluar(ronda_1)).to eq "Juego sin definir"
+    expect(juez.evaluar!(ronda_1)).to eq "empate"
   end
 
-  it 'jugadas 2 rondas a empate, debe dar juego sin definir' do
+  it 'jugadas 2 rondas a empate, debe dar empate' do
     ronda_1.jugador_1_usa(piedra)
     ronda_1.jugador_2_usa(piedra)
-    expect(juez.evaluar(ronda_1)).to eq "Juego sin definir"
+    expect(juez.evaluar!(ronda_1)).to eq "empate"
     ronda_2.jugador_1_usa(piedra)
     ronda_2.jugador_2_usa(piedra)
-    expect(juez.evaluar(ronda_2)).to eq "Juego sin definir"
+    expect(juez.evaluar!(ronda_2)).to eq "empate"
   end
+
+  it 'jugadas 2 rondas que gana el jugador 1, debe dar "jugador 1 gana"' do
+    ronda_1.jugador_1_usa(papel)
+    ronda_1.jugador_2_usa(piedra)
+    expect(juez.evaluar!(ronda_1)).to eq "jugador 1 gana"
+    ronda_2.jugador_1_usa(papel)
+    ronda_2.jugador_2_usa(piedra)
+    expect(juez.evaluar!(ronda_2)).to eq "jugador 1 gana"
+  end
+
 end
