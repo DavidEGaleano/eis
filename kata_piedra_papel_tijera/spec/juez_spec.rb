@@ -28,4 +28,12 @@ describe 'Juez' do
     expect(juez.evaluar(ronda_1)).to eq "Juego sin definir"
   end
 
+  it 'jugadas 2 rondas a empate, debe dar juego sin definir' do
+    ronda_1.jugador_1_usa(piedra)
+    ronda_1.jugador_2_usa(piedra)
+    expect(juez.evaluar(ronda_1)).to eq "Juego sin definir"
+    ronda_2.jugador_1_usa(piedra)
+    ronda_2.jugador_2_usa(piedra)
+    expect(juez.evaluar(ronda_2)).to eq "Juego sin definir"
+  end
 end
