@@ -1,5 +1,5 @@
 class Juez
-   attr_reader :victorias_p1, :victorias_p2, :tabla_de_resultados, :rondas_jugadas
+  attr_reader :victorias_p1, :victorias_p2, :tabla_de_resultados, :rondas_jugadas
 
   def initialize
     @victorias_p1 = 0
