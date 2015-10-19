@@ -15,3 +15,8 @@ cd ..
 cd kata_batallanaval
 bundle install
 bundle exec rake
+cd ..
+cd kata_calculadora
+bundle install
+bundle exec rake
+
