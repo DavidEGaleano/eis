@@ -13,4 +13,9 @@ describe 'Calculadora' do
     expect(calculadora.cantidad_operaciones).to eq 0
   end
 
+  it 'hizo una operacion, deberia dar 1' do
+    calculadora.sumar(1,2)
+    expect(calculadora.cantidad_operaciones).to eq 1
+  end
+
 end
