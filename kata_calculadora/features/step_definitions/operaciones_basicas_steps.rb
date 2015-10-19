@@ -8,9 +8,9 @@ Given(/^otro operando es (\d+)$/) do |arg1|
 end
 
 When(/^los sumo$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  click_button('sumar')
 end
 
 Then(/^el resultado es (\d+)$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_content('Resultado: 3')
 end

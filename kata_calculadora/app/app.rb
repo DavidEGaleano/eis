@@ -1,4 +1,4 @@
-#require_relative 'algunmodelo?'
+require_relative 'models/calculadora'
 
 module Ejemplo
   class App < Padrino::Application
@@ -16,6 +16,13 @@ module Ejemplo
     end
 
     get 'calculadora' do
+      render 'calculadora'
+    end
+
+    post 'calculadora' do
+      @op_1 = params[:operando_1]
+      @op_2 = params[:operando_2]
+      @resultado = Calculadora.new.sumar(@op_1.to_i,@op_2.to_i)
       render 'calculadora'
     end
 
