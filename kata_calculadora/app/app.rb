@@ -26,8 +26,8 @@ module Ejemplo
       @op_2 = params[:operando_2]
       @calculadora = Calculadora.new
       @calculadora.cargar_cantidad_operaciones(session[:operaciones])
-      @resultado = calculadora.sumar(@op_1.to_i,@op_2.to_i)
-      @operaciones = calculadora.cantidad_operaciones
+      @resultado = @calculadora.sumar(@op_1.to_i,@op_2.to_i)
+      @operaciones = @calculadora.cantidad_operaciones
       session[:operaciones]= @operaciones
       render 'calculadora'
     end
