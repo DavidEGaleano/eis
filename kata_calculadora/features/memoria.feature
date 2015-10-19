@@ -1,9 +1,9 @@
-@wip
+
 Feature: memoria de cantidad de operaciones
 
   Scenario: no hice operaciones
     Given no hice operaciones
-    Then la cantidad de operaiones es 0
+    Then la cantidad de operaciones es 0
   @wip
   Scenario: cuando hago operaciones la cantidad de incrementa
     Given hago una suma

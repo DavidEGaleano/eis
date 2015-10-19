@@ -16,13 +16,19 @@ module Ejemplo
     end
 
     get 'calculadora' do
+      @operaciones = params[:operaciones].to_i
+      session[:operaciones] = params[:operaciones].to_i
       render 'calculadora'
     end
 
     post 'calculadora' do
       @op_1 = params[:operando_1]
       @op_2 = params[:operando_2]
-      @resultado = Calculadora.new.sumar(@op_1.to_i,@op_2.to_i)
+      @calculadora = Calculadora.new
+      @calculadora.cargar_cantidad_operaciones(session[:operaciones])
+      @resultado = calculadora.sumar(@op_1.to_i,@op_2.to_i)
+      @operaciones = calculadora.cantidad_operaciones
+      session[:operaciones]= @operaciones
       render 'calculadora'
     end
 
