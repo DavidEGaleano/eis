@@ -5,7 +5,7 @@ describe 'Calculadora' do
 
   let(:calculadora) { Calculadora.new }  
 
-  it 'dado 1 operando 1 y otro operando 2, al sumarlos deberia dar 3' do
+  it 'dado un operando 1 y otro operando 2, al sumarlos deberia dar 3' do
     expect(calculadora.sumar(1,2)).to eq 3
   end
 
@@ -16,6 +16,10 @@ describe 'Calculadora' do
   it 'hizo una operacion, deberia dar 1' do
     calculadora.sumar(1,2)
     expect(calculadora.cantidad_operaciones).to eq 1
+  end
+
+  it 'dado un operando 1 y otro operando 2, al restarlo deberida dar -1' do 
+    expect(calculadora.restar(1,2)).to eq -1
   end
 
 end

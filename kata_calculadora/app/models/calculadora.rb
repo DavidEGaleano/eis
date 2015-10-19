@@ -19,4 +19,9 @@ class Calculadora
    @cantidad_operaciones = cantidad_operaciones
   end
 
+  def restar(operando_1,operando_2)
+    @cantidad_operaciones = @cantidad_operaciones+1
+    operando_1 - operando_2
+  end
+
 end
