@@ -35,6 +35,9 @@ module Ejemplo
       if(params[:resetear_memoria])
         @resultado = @calculadora.resetear_memoria
       end
+      if(params[:promediar])
+        @resultado = @calculadora.promediar(@op_1.to_i,@op_2.to_i)
+      end
       @operaciones = @calculadora.cantidad_operaciones
       session[:operaciones]= @operaciones
       render 'calculadora'
