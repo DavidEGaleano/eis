@@ -12,5 +12,11 @@ When(/^los sumo$/) do
 end
 
 Then(/^el resultado es (\d+)$/) do |arg1|
-  expect(page).to have_content('Resultado: 3')
+  expect(page).to have_content('Resultado: ' + arg1)
 end
+
+When(/^los resto$/) do
+  click_button('Restar')
+end
+
+
