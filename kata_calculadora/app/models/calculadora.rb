@@ -7,7 +7,7 @@ class Calculadora
   end
 
   def sumar(operando_1,operando_2)
-  	@cantidad_operaciones = @cantidad_operaciones+1
+  	self.contar_operaciones
     operando_1 + operando_2
   end
 
@@ -20,7 +20,7 @@ class Calculadora
   end
 
   def restar(operando_1,operando_2)
-    @cantidad_operaciones = @cantidad_operaciones+1
+    self.contar_operaciones
     operando_1 - operando_2
   end
 
@@ -30,6 +30,10 @@ class Calculadora
 
   def promediar(operando_1,operando_2)
     sumar(operando_1,operando_2) / 2
+  end
+
+  def contar_operaciones
+    @cantidad_operaciones = @cantidad_operaciones+1
   end
 
 end

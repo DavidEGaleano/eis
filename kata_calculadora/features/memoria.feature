@@ -23,4 +23,9 @@ Feature: memoria de cantidad de operaciones
     And hago un promedio
     Then la cantidad de operaciones es 1
 
-  Scenario: 
+  Scenario: cuando hago una suma la cantidad se incrementa
+    Given una pagina de la calculadora
+    And hago una suma
+    Then la cantidad de operaciones es 1
+ 
+
