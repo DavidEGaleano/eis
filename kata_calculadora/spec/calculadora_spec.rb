@@ -26,4 +26,7 @@ describe 'Calculadora' do
     expect(calculadora.resetear_memoria).to eq 0  
   end
 
+  it 'dado un operando 10 y otro 2 al promediar debe dar 6' do
+    expect(calculadora.promediar(10,2)).to eq 6
+  end
 end

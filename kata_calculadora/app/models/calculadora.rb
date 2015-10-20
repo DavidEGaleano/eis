@@ -28,4 +28,8 @@ class Calculadora
     @cantidad_operaciones = 0
   end
 
+  def promediar(operando_1,operando_2)
+    sumar(operando_1,operando_2) / 2
+  end
+
 end
