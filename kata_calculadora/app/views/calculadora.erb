@@ -7,11 +7,11 @@
     <form method="POST" action="calculadora">
       <%= csrf_token_field %>
       <label>Operando 1</label>
-      <input id="operando_1" type="text" name="operando_1">
+      <input id="operando_1" type="text" name="operando_1"><br>
       <label>Operando 2</label>
-      <input id="operando_2" type="text" name="operando_2">
-      <input type="submit" value="sumar" id="sumar"/>
-      <input type="submit" value="restar" id="restar"/>
+      <input id="operando_2" type="text" name="operando_2"><br>
+      <button type="submit" name="Sumar"> Sumar </button>
+      <button type="submit" name="Restar"> Restar </button>
       <input type="hidden" name="operaciones" value="0"/>
     </form>
     Resultado: <%= @resultado %>
