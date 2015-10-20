@@ -7,7 +7,6 @@ Then(/^la cantidad de operaciones es (\d+)$/) do |arg1|
 end
 
 Given(/^hago una suma$/) do
-  visit 'calculadora'
   fill_in 'operando_1', with: 1
   fill_in 'operando_2', with: 2
   click_button('Sumar')
@@ -24,10 +23,14 @@ Given(/^reseteo la memoria$/) do
 end
 
 Given(/^hago un promedio$/) do
-  visit 'calculadora'
   fill_in 'operando_1', with: 10
   fill_in 'operando_2', with: 2
   click_button('Promediar')
 end
+
+Given(/^una pagina de la calculadora$/) do
+  visit 'calculadora'
+end
+
 
 
