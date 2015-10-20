@@ -24,4 +24,8 @@ class Calculadora
     operando_1 - operando_2
   end
 
+  def resetear_memoria
+    @cantidad_operaciones = 0
+  end
+
 end

@@ -22,4 +22,8 @@ describe 'Calculadora' do
     expect(calculadora.restar(1,2)).to eq -1
   end
 
+  it 'reseteada la memoria, debe dar 0' do
+    expect(calculadora.resetear_memoria).to eq 0  
+  end
+
 end
