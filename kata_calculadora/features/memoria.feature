@@ -28,4 +28,7 @@ Feature: memoria de cantidad de operaciones
     And hago una suma
     Then la cantidad de operaciones es 1
  
-
+  Scenario: cuando hago una resta la cantidad se incrementa
+    Given una pagina de la calculadora
+    And hago una resta
+    Then la cantidad de operaciones es 1
