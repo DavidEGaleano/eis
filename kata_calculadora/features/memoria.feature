@@ -16,7 +16,6 @@ Feature: memoria de cantidad de operaciones
     And reseteo la memoria
     Then la cantidad de operaciones es 0
 
-  @wip
   Scenario: cuando hago un promedio la cantidad se incrementa
     Given hago un promedio
     Then la cantidad de operaciones es 1

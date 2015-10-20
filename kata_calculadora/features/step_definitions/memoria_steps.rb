@@ -23,4 +23,11 @@ Given(/^reseteo la memoria$/) do
   click_button('Resetear Memoria')
 end
 
+Given(/^hago un promedio$/) do
+  visit 'calculadora'
+  fill_in 'operando_1', with: 10
+  fill_in 'operando_2', with: 2
+  click_button('Promediar')
+end
+
 
