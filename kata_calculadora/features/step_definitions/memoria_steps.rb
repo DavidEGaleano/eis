@@ -19,3 +19,8 @@ Given(/^hago una resta$/) do
   click_button('Restar')
 end
 
+Given(/^reseteo la memoria$/) do
+  click_button('Resetear Memoria')
+end
+
+

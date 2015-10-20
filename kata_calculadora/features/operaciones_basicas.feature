@@ -6,5 +6,5 @@ Feature: Operaciones basicas
     Given un operando es 1
     And otro operando es 2
     When los sumo
-    Then el resultado es 3
+    Then el resultado es 3 
 
