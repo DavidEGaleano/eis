@@ -1,0 +1,14 @@
+Titulo: Continuous Integration: Improving software Quality and Reducing Risk
+
+Autor: Paul M. Duvall, Steve Matyas, Andrew Glover
+
+Año de Publicacion: 9 de Julio, 2007
+
+Resumen: El libro trata de de ilustrar como la integración se transfora de una mala necesidad a ser parte del proceso de desarrollo
+de todos los dias. Primero comienza con el concepro de la Integración continua y sus practicas desde la base hasta lo mas avanzado
+explorando otras practicas en las que se usa la integración continua, como la integracion de BDs,testing,inspection,deployment y feedback.
+Contiene mas de cuarenta ejemplos practicos con diferentes lenguajes, se puede entender como la Integracion continua lidera un desarrollo,
+produce software deployable en cada paso de cada ciclo de vida del desarrollo, y reduce el tiempo entre la introducción y la detección,
+ganando tiempo y bajando costos. Con una buena implementación de la integración continua, los desarrolladores reduce los riesgos y los procesos
+manuales repetitivos, y el equipo obtiene una mejor visibilidad del projecto.
+ 
